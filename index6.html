@@ -12,21 +12,21 @@
 <body>
 
     <script>
-        tr = parseInt(prompt("Введіть кільсість рядочків"))
-        td = parseInt(prompt("Введіть кільсість стовпчиків"))
+        rows = parseInt(prompt("Введіть кільсість рядочків"))
+        columns = parseInt(prompt("Введіть кільсість стовпчиків"))
 
-        function tableFun(tr, td) {
+        function tableFun(rows, columns) {
             document.write('<table border=1>')
-            for (let r = 0; r < tr; r++) {
+            for (let r = 0; r < rows; r++) {
                 document.write('<tr>')
-                for (let d = 0; d < td; d++) {
+                for (let d = 0; d < columns; d++) {
                     document.write('<td>комірка</td>')
                 }
                 document.write('</tr>')
             }
             document.write('</table>')
         }
-        tableFun(tr, td)
+        tableFun(rows, columns)
 
     </script>
 

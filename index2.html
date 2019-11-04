@@ -11,29 +11,24 @@
 
 <body>
 
-       <script>         
+    <script>
         function seasons(dayNum) {
-     
-                switch (dayNum) {
-                    case 1: return "6 уроків"
-                    case 2: return "5 уроків"
-                    case 3: return "7 уроків"
-                    case 4: return"5 уроків"
-                    case 5: return "4 уроків"
-                        
-                    case 6: return "вихідний"
-                        
-                    case 7: return "вихідний"
-                        
-                    default: throw new Error( "Будь ласка, введіть правильний день тижня")
+
+            switch (dayNum) {
+                case 1: return 6
+                case 2: return 5
+                case 3: return 7
+                case 4: return 5
+                case 5: return 4
+                case 6: return 0
+                case 7: return 0
+                default: throw new Error("Будь ласка, введіть правильний день тижня")
             }
         }
 
-
         let dayNum = parseInt(prompt('Введіть номер дня тижня'))
-        let res=seasons(dayNum)
-        document.write(res)
-    
+        document.write(`${seasons(dayNum)} уроків`)
+
     </script>
 </body>
 

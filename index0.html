@@ -10,39 +10,31 @@
 <!-- Задача 0. Створити функцію, яка за номером місяця повертає пору року, до якої відноситься цей місяць. -->
 
 <body>
-<script>
+    <script>
         function seasons(moonNumb) {
             switch (moonNumb) {
-                case 1: document.write("Зима")
-                    break;
-                case 2: document.write("Зима")
-                    break;
-                case 3: document.write("Весна")
-                    break;
-                case 4: document.write("Весна")
-                    break;
-                case 5: document.write("Весна")
-                    break;
-                case 6: document.write("Літо")
-                    break;
-                case 7: document.write("Літо")
-                    break;
-                case 8: document.write("Літо")
-                    break;
-                case 9: document.write("Осінь")
-                    break;
-                case 10: document.write("Осінь")
-                    break;
-                case 11: document.write("Осінь")
-                    break;
-                case 12: document.write("Зима")
-                    break;
+                case 1:
+                case 2:
+                case 12:
+                    return "Зима"
+                case 3:
+                case 4:
+                case 5: 
+                    return "Весна"
+                case 6:
+                case 7:
+                case 8:
+                    return "Літо"
+                case 9:
+                case 10:
+                case 11:
+                    return "Осінь"
                 default:
-                    break;
+                    return "Невірно вибраний місяць"
             }
         }
         let moonNumb = parseInt(prompt('Введіть номер місяця'))
-        seasons(moonNumb)
+        document.write(seasons(moonNumb))
     </script>
 </body>
 

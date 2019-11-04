@@ -13,15 +13,15 @@
 <body>
 
     <script>
-        function getBaner(img, zaholovok, link) {
-            document.write(`<a href="${link}"><img src="${img}" alt="${zaholovok}"></a>`)
+        function showBaner(img, headline, link) {
+            document.write(`<a href="${link}"><img src="${img}" alt="${headline}"></a>`)
         }
 
         let img = 'kypit-slona.png'
-        let zaholovok = 'Клікайте, та купіть!'
+        let headline = 'Клікайте, та купіть!'
         let link = 'https://rozetka.com.ua/soft_toys/c99051/tegi117602=sloni'
 
-        getBaner(img, zaholovok, link)
+        showBaner(img, headline, link)
     </script>
 </body>
 

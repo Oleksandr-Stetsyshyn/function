@@ -17,27 +17,16 @@
     <label> Результат <input id="res" type="text"> </label>
     <Script>
         function klkParn(numb1, numb2, numb3) {
-            let kilk = 3
-            if (numb1 % 2)
-                kilk -= 1
-            if (numb2 % 2)
-                kilk -= 1
-            if (numb3 % 2)
-                kilk -= 1
-            return kilk
+            return 3 - numb1 % 2 - numb2 % 2 - numb3 % 2 // ділимо на 2 з остачою, якщо парне остача "0", якщо не парне то "1"
         }
-        
         //натиснули кнопку 
         document.getElementById("btnParn").onclick = function () {
             let numb1 = parseFloat(document.getElementById("numb1").value)
             let numb2 = parseFloat(document.getElementById("numb2").value)
             let numb3 = parseFloat(document.getElementById("numb3").value)
-            let s = klkParn(numb1, numb2, numb3)
-            document.getElementById("res").value = s
+            document.getElementById("res").value = klkParn(numb1, numb2, numb3)
         }
-
     </Script>
-
 
 </body>
 

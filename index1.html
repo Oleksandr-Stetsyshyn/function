@@ -15,38 +15,25 @@
     <script>
         function seasons(moonNumb) {
             switch (moonNumb) {
-                case 1: document.write("Cічень")
-                    break;
-                case 2: document.write("Лютий")
-                    break;
-                case 3: document.write("Березень")
-                    break;
-                case 4: document.write("Квітень")
-                    break;
-                case 5: document.write("Травень")
-                    break;
-                case 6: document.write("Червень")
-                    break;
-                case 7: document.write("Липень")
-                    break;
-                case 8: document.write("Серпень")
-                    break;
-                case 9: document.write("Вересень")
-                    break;
-                case 10: document.write("Жоветень")
-                    break;
-                case 11: document.write("Листопад")
-                    break;
-                case 12: document.write("Грудень")
-                    break;
-                default:
-                    break;
+                case 1: return "Cічень"
+                case 2: return "Лютий"
+                case 3: return "Березень"
+                case 4: return "Квітень"
+                case 5: return "Травень"
+                case 6: return "Червень"
+                case 7: return "Липень"
+                case 8: return "Серпень"
+                case 9: return "Вересень"
+                case 10: return "Жоветень"
+                case 11: return "Листопад"
+                case 12: return "Грудень"
+                default: return "Невірно набраний місяць"
             }
-
         }
         let moonNumb = parseInt(prompt('Введіть номер місяця'))
-        seasons(moonNumb)
+        document.write(seasons(moonNumb))
     </script>
+
 
 </body>
 
