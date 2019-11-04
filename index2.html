@@ -15,8 +15,7 @@
         function seasons(dayNum) {
             if (dayNum < 8 && dayNum > 0) {
                 switch (dayNum) {
-                    case 1: document.write("6 уроків")
-                        break;
+                    case 1: return "6 уроків"
                     case 2: document.write("5 уроків")
                         break;
                     case 3: document.write("7 уроків")
@@ -38,7 +37,8 @@
 
 
         let dayNum = parseInt(prompt('Введіть номер дня тижня'))
-        seasons(dayNum)
+        let res=seasons(dayNum)
+        document.write(res)
     </script>
 </body>
 
